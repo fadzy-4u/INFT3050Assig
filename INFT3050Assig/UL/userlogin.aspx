@@ -1,11 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userlogin.aspx.cs" Inherits="INFT3050Assig.UL.userlogin" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/UL/MainMaster.Master" AutoEventWireup="true" CodeBehind="userlogin.aspx.cs" Inherits="INFT3050Assig.UL.userlogin" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link rel="stylesheet" type="text/css" href="CSS/formSS.css" />
+<asp:Content ID="contentHead" ContentPlaceHolderID="head" runat="server">
     <title>User Login</title>
+    <link rel="stylesheet" type="text/css" href="CSS/formSS.css" />
+
+</asp:Content>
+
+<asp:Content ID="contentbody1" ContentPlaceHolderID="body1" runat="server">
+    
     <style type="text/css">
         .auto-style1 {
             width: 96%;
@@ -23,13 +25,7 @@
             height: 200px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div class="auto-style4">
-            <img alt="Firm Books" class="auto-style5" src="IMG/logo.png" /></div>
-        <br />
-        <div>
+          <div>
 
             <table class="auto-style1">
                 <tr>
@@ -55,11 +51,10 @@
                 </tr>
             </table>
 
-        </div>
+          </div>
         <p class="auto-style4">
             <asp:Label ID="lblFeedback" runat="server" Text=""></asp:Label>
         </p>
-        </div>
-    </form>
-</body>
-</html>
+
+</asp:Content>
+

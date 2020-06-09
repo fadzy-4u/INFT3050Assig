@@ -120,6 +120,13 @@
     <Compile Include="UL\AdminReg.aspx.designer.cs">
       <DependentUpon>AdminReg.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UL\MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="UL\MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +229,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="UL\MainMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
