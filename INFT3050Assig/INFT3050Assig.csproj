@@ -68,13 +68,157 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="UL\AdminLogIn.aspx" />
+    <Content Include="UL\AdminReg.aspx" />
+    <Content Include="UL\IMG\devilsback.jpg" />
+    <Content Include="UL\IMG\devilsfront.jpg" />
+    <Content Include="UL\IMG\empireback.jpg" />
+    <Content Include="UL\IMG\empirefront.jpg" />
+    <Content Include="UL\IMG\logo.png" />
+    <Content Include="UL\IMG\maradonaback.jpg" />
+    <Content Include="UL\IMG\maradonafront.jpg" />
+    <Content Include="UL\IMG\panamaback.jpg" />
+    <Content Include="UL\IMG\panamafront.jpg" />
+    <Content Include="UL\IMG\sevenback.jpg" />
+    <Content Include="UL\IMG\sevenfront.jpg" />
+    <Content Include="UL\MainPage.aspx" />
+    <Content Include="UL\PaymentPage.aspx" />
+    <Content Include="UL\AboutUs.aspx" />
+    <Content Include="UL\CheckoutPage.aspx" />
+    <Content Include="UL\ContactUs.aspx" />
+    <Content Include="UL\IMG\account.png" />
+    <Content Include="UL\IMG\cart.png" />
+    <Content Include="UL\IMG\order-history.png" />
+    <Content Include="UL\ProductPage.aspx" />
+    <Content Include="UL\PurchaseHistory.aspx" />
+    <Content Include="UL\SearchPage.aspx" />
+    <Content Include="UL\RegoConfirm.aspx" />
+    <Content Include="UL\TestPage.aspx" />
+    <Content Include="UL\CSS\formSS.css" />
+    <Content Include="UL\HomePage.aspx" />
+    <Content Include="UL\IMG\gTick.jpg" />
+    <Content Include="UL\userlogin.aspx" />
+    <Content Include="UL\UserRego.aspx" />
+    <Content Include="UL\ViewCart.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="UL\AdminLogIn.aspx.cs">
+      <DependentUpon>AdminLogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminLogIn.aspx.designer.cs">
+      <DependentUpon>AdminLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminReg.aspx.cs">
+      <DependentUpon>AdminReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminReg.aspx.designer.cs">
+      <DependentUpon>AdminReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\PaymentPage.aspx.cs">
+      <DependentUpon>PaymentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\PaymentPage.aspx.designer.cs">
+      <DependentUpon>PaymentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\CheckoutPage.aspx.cs">
+      <DependentUpon>CheckoutPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\CheckoutPage.aspx.designer.cs">
+      <DependentUpon>CheckoutPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\ProductPage.aspx.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\ProductPage.aspx.designer.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UL\PurchaseHistory.aspx.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\PurchaseHistory.aspx.designer.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\SearchPage.aspx.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\SearchPage.aspx.designer.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\RegoConfirm.aspx.cs">
+      <DependentUpon>RegoConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\RegoConfirm.aspx.designer.cs">
+      <DependentUpon>RegoConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\TestPage.aspx.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\TestPage.aspx.designer.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\userlogin.aspx.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\userlogin.aspx.designer.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\UserRego.aspx.cs">
+      <DependentUpon>UserRego.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\UserRego.aspx.designer.cs">
+      <DependentUpon>UserRego.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\ViewCart.aspx.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\ViewCart.aspx.designer.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -87,7 +231,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="DAL\" />
+    <Folder Include="DL\" />
     <Folder Include="Models\" />
+    <Folder Include="UL\Scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

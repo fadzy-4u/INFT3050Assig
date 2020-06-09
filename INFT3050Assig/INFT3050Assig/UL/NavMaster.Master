@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavMaster.master.cs" Inherits="INFT3050Assig.UL.NavMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="CSS/formSS.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .widthStyle {
+            width: 160px;
+        }
+        .auto-style2 {
+            background-color: whitesmoke;
+            text-align: right;
+        }
+        td:hover {
+            background-color:snow;
+        }
+        a:link {color:gray}
+        a:visited {color:gray}
+        a:active {color:gray}
+        .auto-style3 {
+            width: 152px;
+            height: 138px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="header">
+                <img alt="Firm Books" src="img/logo2.png" class="auto-style3" />
+            </div>
+            <div class="auto-style2">
+                <asp:ImageButton ID="orderhis" ImageUrl="~/UL/IMG/order-history.png" runat="server" Height="61px" Width="61px" />
+                <asp:ImageButton ID="cart" ImageUrl="~/UL/IMG/cart.png" runat="server" Height="61px" Width="61px" />
+                <asp:ImageButton ID="imgaccount" ImageUrl="~/UL/IMG/account.png" runat="server" Height="61px" Width="61px" />
+            </div>
+            <hr />
+            <table class="auto-style1">
+                <tr>
+                    <td class="widthStyle">
+                        <asp:LinkButton ID="linkHome" CssClass="a" runat="server">HOME</asp:LinkButton>
+                    </td>
+                    <td class="widthStyle" >
+                        <asp:LinkButton ID="linkSearch" CssClass="a" PostBackUrl="~/UL/advancedSearch.aspx" runat="server">Advanced Search</asp:LinkButton>
+                    </td>
+                    <td class="widthStyle">
+                        <asp:LinkButton ID="linkAboutUs" CssClass="a" runat="server">Genre</asp:LinkButton>
+                    </td>
+                    <td class="widthStyle">
+                        <asp:LinkButton ID="linkContactUs" CssClass="a" runat="server">Contact Us</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <div class="header">
+                <h3 class="footer">About Us</h3>
+                <p class="footer">This is a test</p>
+                <h3 class="footer">Contact Us</h3>
+                <p class="footer">This is a test</p>
+                <p class="copyright">Copyright. All rights reserved.</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
