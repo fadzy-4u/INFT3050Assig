@@ -13,7 +13,10 @@
         }
         .auto-style2 {
             text-align: center;
-        } 
+        }  
+        .auto-style1{
+            color:aliceblue;
+        }
     </style>
 </head>
 <body>
