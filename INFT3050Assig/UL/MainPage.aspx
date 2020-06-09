@@ -15,7 +15,7 @@
             text-align: center;
         }  
         .auto-style1{
-            color:aliceblue;
+            color:aliceblue; 
         }
     </style>
 </head>
