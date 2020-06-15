@@ -70,6 +70,7 @@
     <Content Include="Global.asax" />
     <Content Include="UL\AdminLogIn.aspx" />
     <Content Include="UL\AdminReg.aspx" />
+    <Content Include="UL\advancedSearch.aspx" />
     <Content Include="UL\IMG\devilsback.jpg" />
     <Content Include="UL\IMG\devilsfront.jpg" />
     <Content Include="UL\IMG\empireback.jpg" />
@@ -120,6 +121,13 @@
     <Compile Include="UL\AdminReg.aspx.designer.cs">
       <DependentUpon>AdminReg.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UL\advancedSearch.aspx.cs">
+      <DependentUpon>advancedSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\advancedSearch.aspx.designer.cs">
+      <DependentUpon>advancedSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UL\MainMaster.Master.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -133,6 +141,13 @@
     </Compile>
     <Compile Include="UL\MainPage.aspx.designer.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\NavMaster.Master.cs">
+      <DependentUpon>NavMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\NavMaster.Master.designer.cs">
+      <DependentUpon>NavMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="UL\PaymentPage.aspx.cs">
       <DependentUpon>PaymentPage.aspx</DependentUpon>
@@ -230,6 +245,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="UL\MainMaster.Master" />
+    <Content Include="UL\NavMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

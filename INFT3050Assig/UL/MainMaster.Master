@@ -6,13 +6,19 @@
 <head runat="server">
     <title></title>
     <link rel="stylesheet" type="text/css" href="CSS/formSS.css" />
+    <style>
+        .auto-style3 {
+            width: 179px;
+            height: 114px;
+        }
+    </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <img alt="FIrm Books" src="IMG/logo.png" />
+            <img alt="FIrm Books" src="IMG/logo.png" class="auto-style3" />
             <asp:ContentPlaceHolder ID="body1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

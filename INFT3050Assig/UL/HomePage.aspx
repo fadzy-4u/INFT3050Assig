@@ -1,11 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="INFT3050Assig.UL.HomePage" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link rel="stylesheet" type="text/css" href="CSS/formSS.css" /> 
-    <title>Home|FIRM BOOKS</title>
+﻿<%@ Page Language="C#" MasterPageFile="~/UL/NavMaster.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="INFT3050Assig.UL.HomePage" %>
+<asp:Content ID="head1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
             width: 100%;
@@ -56,44 +50,10 @@
             height: 200px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div class="auto-style3">
-            <div class="auto-style4">
-                <img alt="Firm Books" class="auto-style13" src="IMG/logo.png" /> <br />
 
-            </div>
-            <hr />  
-            <div>
-                <asp:ImageButton ID="cartbtn" runat="server" Height="67px" ImageUrl="~/UL/IMG/cart.png" OnClick="cartbtn_Click" /><asp:ImageButton ID="historybtn" runat="server" Height="67px" ImageUrl="IMG/order-history.png" OnClick="historybtn_Click" /><asp:ImageButton ID="accountbtn" runat="server" Height="67px" ImageUrl="~/UL/IMG/account.png" />
-            </div>
-            <div> <!--Division section for the menu area-->
-                <table class="auto-style1">
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Button ID="btnHome" runat="server" Text="Home" Width="245px" />
-                        </td>
-                        <td class="auto-style2">
-                            <asp:Button ID="btnNewR" runat="server" Text="New Releases" Width="245px" />
-                        </td>
-                        <td class="auto-style2">
-                            <asp:Button ID="btnAbout" runat="server" Text="About Us" Width="245px" OnClick="btnAbout_Click" />
-                        </td>
-                        <td class="auto-style2">
-                            <asp:Button ID="btnContact" runat="server" Text="Contact Us" Width="245px" OnClick="btnContact_Click" />
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-        </div>
-    <hr />
-    <br />
-    <br />
-
-    <div>
-
+</asp:Content>
+<asp:Content ID="body" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="auto-style3"> 
         <table class="auto-style8">
             <tr>
                 <td class="auto-style6">
@@ -138,6 +98,5 @@
         </table>
 
     </div>
-    </form>
-    </body>
-</html>
+
+</asp:Content>

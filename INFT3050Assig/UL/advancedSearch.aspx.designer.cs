@@ -10,51 +10,51 @@
 namespace INFT3050Assig.UL {
     
     
-    public partial class HomePage {
+    public partial class advancedSearch {
         
         /// <summary>
-        /// maradonaBk control.
+        /// txtKeywords control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton maradonaBk;
+        protected global::System.Web.UI.WebControls.TextBox txtKeywords;
         
         /// <summary>
-        /// panamaBk control.
+        /// txtAuthor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton panamaBk;
+        protected global::System.Web.UI.WebControls.TextBox txtAuthor;
         
         /// <summary>
-        /// devilPBK control.
+        /// txtTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton devilPBK;
+        protected global::System.Web.UI.WebControls.TextBox txtTitle;
         
         /// <summary>
-        /// sevenPBk control.
+        /// txtISBN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton sevenPBk;
+        protected global::System.Web.UI.WebControls.TextBox txtISBN;
         
         /// <summary>
-        /// eodBk control.
+        /// txtGenre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton eodBk;
+        protected global::System.Web.UI.WebControls.TextBox txtGenre;
     }
 }
