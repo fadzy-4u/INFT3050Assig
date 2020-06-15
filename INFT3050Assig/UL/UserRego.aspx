@@ -1,11 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserRego.aspx.cs" Inherits="INFT3050Assig.UL.UserRego" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/UL/MainMaster.Master" AutoEventWireup="true" CodeBehind="UserRego.aspx.cs" Inherits="INFT3050Assig.UL.UserRego" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link rel="stylesheet" type="text/css" href="CSS/formSS.css" /> 
-    <title>User Registration</title>
+<asp:Content ID="headContent" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
             text-align: center;
@@ -25,11 +20,11 @@
             height: 200px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div class="auto-style1">
-            <img alt="Firm Books" class="auto-style5" src="IMG/logo.png" /><br />
+
+</asp:Content>
+
+<asp:Content ID="bodyContent" ContentPlaceHolderID="body1" runat="server">
+    <div class="auto-style1">
             <strong>REGISTRATION</strong> 
 
         </div>
@@ -99,6 +94,9 @@
         <p class="auto-style1">
             <asp:Button ID="btnReg" runat="server" Text="Register" OnClick="btnReg_Click" />
         </p>
-    </form>
-</body>
-</html>
+</asp:Content>
+
+
+    
+        
+

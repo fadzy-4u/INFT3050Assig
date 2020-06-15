@@ -1,11 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminLogIn.aspx.cs" Inherits="INFT3050Assig.UL.AdminLogIn" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/UL/MainMaster.Master" AutoEventWireup="true" CodeBehind="AdminLogIn.aspx.cs" Inherits="INFT3050Assig.UL.AdminLogIn" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link rel="stylesheet" type="text/css" href="CSS/formSS.css" />
-    <title>Admin Log In</title>
+<asp:Content ID="headContent" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
             width: 64%;
@@ -21,21 +16,13 @@
             width: 567px;
             text-align: right;
         }
-        .auto-style5 {
-            width: 200px;
-            height: 200px;
-        }
         .auto-style6 {
             text-align: center;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <br />
-        <div class="auto-style6">
+</asp:Content>
 
-            <img alt="Firm Books" class="auto-style5" src="IMG/logo.png" /></div>
+<asp:Content ID="bodyContent" ContentPlaceHolderID="body1" runat="server">
         <div>
             <table class="auto-style1">
                 <tr>
@@ -54,11 +41,10 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">
                         <asp:Button ID="btnLog" runat="server" Text="LogIn" Width="124px" OnClick="btnLog_Click" />
-            <asp:Label ID="lblerror" runat="server" Text=""></asp:Label>
+                        <asp:Label ID="lblerror" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
             </table>
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+

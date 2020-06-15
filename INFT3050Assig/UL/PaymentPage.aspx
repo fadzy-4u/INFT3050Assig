@@ -1,11 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PaymentPage.aspx.cs" Inherits="INFT3050Assig.PaymentPage" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/UL/MainMaster.Master" AutoEventWireup="true" CodeBehind="PaymentPage.aspx.cs" Inherits="INFT3050Assig.PaymentPage" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link rel="stylesheet" type="text/css" href="CSS/formSS.css" /> 
-    <title>Payment Portal</title>
+<asp:Content ID="headContent" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
             width: 65%;
@@ -25,10 +20,11 @@
             text-align: left;
         }
     </style>
-</head>
-<body>
+
+</asp:Content>
+
+<asp:Content ID="bodyContent" ContentPlaceHolderID="body1" runat="server">
     <h1>Payment</h1>
-    <form id="form1" runat="server">
             <div>
                 <asp:RadioButton ID="RadioButton1" runat="server"  Text="CREDIT CARD"/>
 
@@ -95,8 +91,9 @@
                 <br /><a href="HomePage.aspx">Cancel Order</a>
 
           </div>
-          
 
-    </form>
-</body>
-</html>
+</asp:Content>
+
+
+    
+

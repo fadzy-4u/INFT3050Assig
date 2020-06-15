@@ -9,13 +9,13 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style>
-        .auto-style1 {
+        .tableClass {
             width: 100%;
         }
         .widthStyle {
             width: 160px;
         }
-        .auto-style2 {
+        .divIcons {
             background-color: whitesmoke;
             text-align: right;
         }
@@ -25,11 +25,7 @@
         a:link {color:gray}
         a:visited {color:gray}
         a:active {color:gray}
-        .auto-style2 {
-            background-color: whitesmoke;
-            text-align: right;
-        }
-        .auto-style3 {
+        .logostyle {
             width: 179px;
             height: 114px;
         }
@@ -38,15 +34,15 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <img alt="FIrm Books" src="IMG/logo.png" class="auto-style3" />
+            <img alt="FIrm Books" src="IMG/logo.png" class="logostyle" />
             <hr />
-            <div class="auto-style2">
+            <div class="divIcons">
                 <asp:ImageButton ID="orderhis" ImageUrl="~/UL/IMG/order-history.png" PostBackUrl="~/UL/PurchaseHistory.aspx" runat="server" Height="61px" Width="61px" />
                 <asp:ImageButton ID="cart" ImageUrl="~/UL/IMG/cart.png" PostBackUrl="~/UL/ViewCart.aspx" runat="server" Height="61px" Width="61px" />
                 <asp:ImageButton ID="imgaccount" ImageUrl="~/UL/IMG/account.png" runat="server" Height="61px" Width="61px" />
             </div>
             <hr />
-            <table class="auto-style1">
+            <table class="tableClass">
                 <tr>
                     <td class="widthStyle">
                         <asp:LinkButton ID="linkHome" CssClass="a" runat="server">HOME</asp:LinkButton>

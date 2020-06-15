@@ -92,7 +92,6 @@
     <Content Include="UL\IMG\order-history.png" />
     <Content Include="UL\ProductPage.aspx" />
     <Content Include="UL\PurchaseHistory.aspx" />
-    <Content Include="UL\SearchPage.aspx" />
     <Content Include="UL\RegoConfirm.aspx" />
     <Content Include="UL\TestPage.aspx" />
     <Content Include="UL\CSS\formSS.css" />
@@ -191,13 +190,6 @@
     </Compile>
     <Compile Include="UL\PurchaseHistory.aspx.designer.cs">
       <DependentUpon>PurchaseHistory.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UL\SearchPage.aspx.cs">
-      <DependentUpon>SearchPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UL\SearchPage.aspx.designer.cs">
-      <DependentUpon>SearchPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\RegoConfirm.aspx.cs">
       <DependentUpon>RegoConfirm.aspx</DependentUpon>

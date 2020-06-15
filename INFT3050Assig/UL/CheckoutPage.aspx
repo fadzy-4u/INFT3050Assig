@@ -1,11 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CheckoutPage.aspx.cs" Inherits="INFT3050Assig.UL.CheckoutPage" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/UL/MainMaster.Master" AutoEventWireup="true" CodeBehind="CheckoutPage.aspx.cs" Inherits="INFT3050Assig.UL.CheckoutPage" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link rel="stylesheet" type="text/css" href="CSS/formSS.css" /> 
-    <title>Checkout Page</title>
+<asp:Content ID="headContent" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style4 {
             width: 331px;
@@ -34,13 +29,13 @@
             text-align: center;
         }
     </style>
-</head>
-<body>
+
+</asp:Content>
+
+<asp:Content ID="bodyContent" ContentPlaceHolderID="body1" runat="server">
     <h1>Checkout Page</h1>
     <hr />
-
-    <form id="form1" runat="server">
-        <div>
+    <div>
             <h2>Contact Information</h2>
             <table class="auto-style7" align="center">
                 <tr>
@@ -135,6 +130,9 @@
         <div class="auto-style13">
         <a href="HomePage.aspx">Continue Shopping</a>
         </div>
-    </form>
-</body>
-</html>
+
+</asp:Content>
+
+
+    
+

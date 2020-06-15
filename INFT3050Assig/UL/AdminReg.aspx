@@ -1,11 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminReg.aspx.cs" Inherits="INFT3050Assig.UL.AdminReg" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/UL/MainMaster.Master" AutoEventWireup="true" CodeBehind="AdminReg.aspx.cs" Inherits="INFT3050Assig.UL.AdminReg" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link rel="stylesheet" type="text/css" href="CSS/formSS.css" />
-    <title>Administration Registration</title>
+<asp:Content ID="headContent" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
             width: 249px;
@@ -25,14 +20,11 @@
             width: 677px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div class="auto-style2">
 
-            <img alt="Firm Books" class="auto-style1" src="IMG/logo.png" /></div>
+</asp:Content>
+
+<asp:Content ID="bodyContent" ContentPlaceHolderID="body1" runat="server">
         <div>
-
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style4">First Name</td>
@@ -87,6 +79,9 @@
             </table>
 
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+
+
+
+        
+

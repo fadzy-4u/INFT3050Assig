@@ -7,7 +7,7 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="CSS/formSS.css" />
     <style>
-        .auto-style3 {
+        .logostyle {
             width: 179px;
             height: 114px;
         }
@@ -18,7 +18,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <img alt="FIrm Books" src="IMG/logo.png" class="auto-style3" />
+            <img alt="FIrm Books" src="IMG/logo.png" class="logostyle" />
             <asp:ContentPlaceHolder ID="body1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
