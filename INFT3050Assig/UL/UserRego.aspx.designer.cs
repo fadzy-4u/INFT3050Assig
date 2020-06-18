@@ -49,13 +49,22 @@ namespace INFT3050Assig.UL {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator lNameVal;
         
         /// <summary>
-        /// Calendar1 control.
+        /// txtDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.TextBox txtDate;
+        
+        /// <summary>
+        /// dateVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator dateVal;
         
         /// <summary>
         /// txtAddress control.
@@ -103,6 +112,15 @@ namespace INFT3050Assig.UL {
         protected global::System.Web.UI.WebControls.TextBox txtPhoneNo;
         
         /// <summary>
+        /// valPhoneNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator valPhoneNo;
+        
+        /// <summary>
         /// txtUserN control.
         /// </summary>
         /// <remarks>
@@ -136,7 +154,7 @@ namespace INFT3050Assig.UL {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator passwordVal;
+        protected global::System.Web.UI.WebControls.CustomValidator passwordVal;
         
         /// <summary>
         /// btnReg control.

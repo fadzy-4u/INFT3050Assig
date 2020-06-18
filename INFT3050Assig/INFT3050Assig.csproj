@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="UL\Account.aspx" />
     <Content Include="UL\AdminLogIn.aspx" />
     <Content Include="UL\AdminReg.aspx" />
     <Content Include="UL\advancedSearch.aspx" />
@@ -105,6 +106,13 @@
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\AdminLogIn.aspx.cs">
       <DependentUpon>AdminLogIn.aspx</DependentUpon>

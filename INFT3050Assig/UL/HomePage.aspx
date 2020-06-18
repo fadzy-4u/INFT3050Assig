@@ -1,18 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/UL/NavMaster.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="INFT3050Assig.UL.HomePage" %>
 <asp:Content ID="head1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 247px;
-        }
         .auto-style3 {
             width: 100%;
             text-align: right;
-        }
-        .auto-style4 {
-            text-align: left;
         }
         .auto-style6 {
             height: 300px;
@@ -45,14 +36,11 @@
             height: 414px;
             text-align: center;
         }
-        .auto-style13 {
-            width: 328px;
-            height: 200px;
-        }
-    </style>
+        </style>
 
 </asp:Content>
 <asp:Content ID="body" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h2>New Releases</h2>
     <div class="auto-style3"> 
         <table class="auto-style8">
             <tr>
@@ -94,6 +82,26 @@
                     by Dean Jobb<br />
                     $8.95</td>
                 <td class="auto-style10">&nbsp;</td>
+            </tr>
+        </table>
+
+    </div>
+    <hr />
+    <h2>Best Sellers</h2>
+    <div class="auto-style3">
+
+        <table class="auto-style8">
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
         </table>
 

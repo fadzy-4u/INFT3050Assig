@@ -4,6 +4,10 @@
         .auto-style4 {
             width: 347px;
         }
+        .auto-style5 {
+            width: 600px;
+            height: 371px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -11,7 +15,7 @@
     <br />
     <div>
         
-        <table class="auto-style1">
+        <table class="auto-style5">
             <tr>
                 <td class="auto-style4">Keywords</td>
                 <td>
@@ -40,6 +44,12 @@
                 <td class="auto-style4">Genre</td>
                 <td>
                     <asp:TextBox ID="txtGenre" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td>
+                    <asp:Button ID="searchBtn" runat="server" Height="44px" Text="Search" Width="116px" />
                 </td>
             </tr>
         </table>

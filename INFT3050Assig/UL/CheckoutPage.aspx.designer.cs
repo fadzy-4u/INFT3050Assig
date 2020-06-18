@@ -76,6 +76,15 @@ namespace INFT3050Assig.UL {
         protected global::System.Web.UI.WebControls.TextBox txtPhone;
         
         /// <summary>
+        /// phoneVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator phoneVal;
+        
+        /// <summary>
         /// txtAddres control.
         /// </summary>
         /// <remarks>

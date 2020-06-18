@@ -21,5 +21,18 @@ namespace INFT3050Assig.UL
                 Response.Redirect("AdminLogIn.aspx");
             }
         }
+
+        protected void passwordVal_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            int passwordLen = args.Value.Length;
+            if (passwordLen >= 8 && passwordLen <= 16)
+            {
+                args.IsValid = true;
+            }
+            else
+            {
+                args.IsValid = true;
+            }
+        }
     }
 }

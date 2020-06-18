@@ -49,15 +49,6 @@ namespace INFT3050Assig.UL {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator lnVal;
         
         /// <summary>
-        /// Calendar1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
-        
-        /// <summary>
         /// txPH control.
         /// </summary>
         /// <remarks>
@@ -65,6 +56,15 @@ namespace INFT3050Assig.UL {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txPH;
+        
+        /// <summary>
+        /// phoneValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator phoneValidator;
         
         /// <summary>
         /// txMail control.
@@ -94,13 +94,13 @@ namespace INFT3050Assig.UL {
         protected global::System.Web.UI.WebControls.TextBox txPw;
         
         /// <summary>
-        /// pwordVal control.
+        /// passwordVal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator pwordVal;
+        protected global::System.Web.UI.WebControls.CustomValidator passwordVal;
         
         /// <summary>
         /// btnSubmit control.

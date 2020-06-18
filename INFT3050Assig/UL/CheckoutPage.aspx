@@ -66,6 +66,8 @@
                     <td class="auto-style6">Phone Number</td>
                     <td class="auto-style4">
                         <asp:TextBox ID="txtPhone" runat="server" Width="400px"></asp:TextBox>
+                        <br />
+                        <asp:RegularExpressionValidator ID="phoneVal" runat="server" CssClass="textWarn" Display="Dynamic" ErrorMessage="Enter a valid Australian Number" SetFocusOnError="True" ValidationExpression="(\d{10}$)|(^\d{11}$)">Enter a valid Australian Number</asp:RegularExpressionValidator>
                     </td>
                 </tr>
             </table>

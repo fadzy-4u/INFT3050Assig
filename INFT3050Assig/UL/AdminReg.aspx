@@ -2,13 +2,6 @@
 
 <asp:Content ID="headContent" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style1 {
-            width: 249px;
-            height: 219px;
-        }
-        .auto-style2 {
-            text-align: center;
-        }
         .auto-style3 {
             width: 100%;
         }
@@ -43,15 +36,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style4">Date Of Birth</td>
-                    <td class="auto-style5">
-                        <asp:Calendar ID="Calendar1" runat="server" Height="148px" Width="374px"></asp:Calendar>
-                    </td>
-                </tr>
-                <tr>
                     <td class="auto-style4">Phone Number</td>
                     <td class="auto-style5">
                         <asp:TextBox ID="txPH" runat="server" Width="350px"></asp:TextBox>
+                        <br />
+                        <asp:RegularExpressionValidator ID="phoneValidator" runat="server" CssClass="textWarn" Display="Dynamic" ErrorMessage="Enter a valid Australian Phone number" SetFocusOnError="True" ValidationExpression="(\d{10}$)|(^\d{11}$)">Enter a valid Australian Phone number</asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
@@ -67,7 +56,8 @@
                     <td class="auto-style5">
                         <asp:TextBox ID="txPw" runat="server" Width="350px"></asp:TextBox>
                         <br />
-                        <asp:RequiredFieldValidator ID="pwordVal" runat="server" ControlToValidate="txPw" CssClass="textWarn" ErrorMessage="Please enter your Password"></asp:RequiredFieldValidator>
+                        <asp:CustomValidator ID="passwordVal" runat="server" ControlToValidate="txPw" CssClass="textWarn" Display="Dynamic" ErrorMessage="Enter a 8-16 character password" OnServerValidate="passwordVal_ServerValidate" SetFocusOnError="True">Enter a 8-16 character password</asp:CustomValidator>
+                        <br />
                     </td>
                 </tr>
                 <tr>

@@ -3,15 +3,10 @@
 <asp:Content ID="contentHead" ContentPlaceHolderID="head" runat="server">
     <title>User Login</title>
     <link rel="stylesheet" type="text/css" href="CSS/formSS.css" />
-
-</asp:Content>
-
-<asp:Content ID="contentbody1" ContentPlaceHolderID="body1" runat="server">
-    
     <style type="text/css">
         .auto-style1 {
-            width: 96%;
-            height: 104px;
+            width: 97%;
+            height: 190px;
         }
         .auto-style2 {
             text-align: right;
@@ -20,14 +15,12 @@
         .auto-style4 {
             text-align: center;
         }
-        .auto-style5 {
-            width: 200px;
-            height: 200px;
-        }
-    </style>
-          <div>
+        </style>
+</asp:Content>
 
-            <table class="auto-style1">
+<asp:Content ID="contentbody1" ContentPlaceHolderID="body1" runat="server">
+    <div>
+        <table class="auto-style1">
                 <tr>
                     <td class="auto-style2">
                         <asp:Label ID="lblUsername" runat="server" Text="Username"></asp:Label>
@@ -46,12 +39,13 @@
                 </tr>
                 <tr>
                     <td colspan="2" class="auto-style4">
-                        <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" Height="38px" Width="121px" /><a href="userlogin.aspx">Forgot Passowrd?</a>
+                        &nbsp;
+                        <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" Height="38px" Width="91px" /><a href="userlogin.aspx">Forgot Passowrd?</a>
                     </td>
                 </tr>
             </table>
 
-          </div>
+    </div>
         <p class="auto-style4">
             <asp:Label ID="lblFeedback" runat="server" Text=""></asp:Label>
         </p>

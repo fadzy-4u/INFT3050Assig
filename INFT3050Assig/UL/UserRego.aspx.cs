@@ -11,14 +11,13 @@ namespace INFT3050Assig.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         protected void btnReg_Click(object sender, EventArgs e)
         {
             string strFname = Convert.ToString(txtFName.Text);
             string strLname = Convert.ToString(txtLName.Text);
-            DateTime dateOB = Calendar1.SelectedDate;
             string address = Convert.ToString(txtAddress.Text);
             //int pCode = Convert.ToInt32(txtPCode.Text);
 
@@ -36,6 +35,19 @@ namespace INFT3050Assig.UL
             if(txtFName.Text == "")
             {
                  
+            }
+        }
+
+        protected void passwordVal_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            int pLen = args.Value.Length;
+            if (pLen >= 8 && pLen <= 16)
+            {
+                args.IsValid = true;
+            }
+            else
+            {
+                args.IsValid = true; 
             }
         }
     }

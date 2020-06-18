@@ -7,6 +7,7 @@
         }
         .auto-style2 {
             width: 100%;
+            height: 581px;
         }
         .auto-style3 {
             width: 546px;
@@ -15,11 +16,7 @@
         .auto-style4 {
             width: 962px;
         }
-        .auto-style5 {
-            width: 200px;
-            height: 200px;
-        }
-    </style>
+        </style>
 
 </asp:Content>
 
@@ -34,7 +31,7 @@
                 <td class="auto-style4">
                     <asp:TextBox ID="txtFName" runat="server" Width="336px" OnTextChanged="txtFName_TextChanged"></asp:TextBox>
                     <br />
-                    <asp:RequiredFieldValidator ID="fNameVal" runat="server" ControlToValidate="txtFName" CssClass="textWarn" ErrorMessage="You must enter a name">Please Enter a name</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="fNameVal" runat="server" ControlToValidate="txtFName" CssClass="textWarn" ErrorMessage="You must enter a name" Display="Dynamic" SetFocusOnError="True">Please Enter a name</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -42,13 +39,15 @@
                 <td class="auto-style4">
                     <asp:TextBox ID="txtLName" runat="server" Width="336px"></asp:TextBox>
                     <br />
-                    <asp:RequiredFieldValidator ID="lNameVal" runat="server" ControlToValidate="txtLName" CssClass="textWarn" ErrorMessage="You must enter a last name">Please enter a Last Name</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="lNameVal" runat="server" ControlToValidate="txtLName" CssClass="textWarn" ErrorMessage="You must enter a last name" Display="Dynamic" SetFocusOnError="True">Please enter a Last Name</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Date Of Birth</td>
                 <td class="auto-style4">
-                    <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                    <asp:TextBox ID="txtDate" runat="server" Width="336px"></asp:TextBox>
+                    <br />
+                    <asp:RangeValidator ID="dateVal" runat="server" CssClass="textWarn" Display="Dynamic" ErrorMessage="Age not within required range" SetFocusOnError="True" ControlToValidate="txtDate" MaximumValue="01/01/2002" MinimumValue="01/01/1900" Type="Date">Age not within required range(18 and above)</asp:RangeValidator>
                     <br />
                 </td>
             </tr>
@@ -72,6 +71,8 @@
                 <td class="auto-style3">Phone No</td>
                 <td class="auto-style4">
                     <asp:TextBox ID="txtPhoneNo" runat="server" Width="336px"></asp:TextBox>
+                    <br />
+                    <asp:RegularExpressionValidator ID="valPhoneNo" runat="server" ControlToValidate="txtPhoneNo" CssClass="textWarn" Display="Dynamic" ErrorMessage="Enter a valid australian number" SetFocusOnError="True" ValidationExpression="(\d{10}$)|(^\d{11}$)">Please enter a valid Australian Phone number</asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -79,7 +80,7 @@
                 <td class="auto-style4">
                     <asp:TextBox ID="txtUserN" runat="server" Width="337px"></asp:TextBox>
                     <br />
-                    <asp:RequiredFieldValidator ID="usernameVal" runat="server" ControlToValidate="txtUserN" CssClass="textWarn" ErrorMessage="Enter a username"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="usernameVal" runat="server" ControlToValidate="txtUserN" CssClass="textWarn" ErrorMessage="Enter a username" Display="Dynamic" SetFocusOnError="True">Enter a unique username</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -87,12 +88,13 @@
                 <td class="auto-style4">
                     <asp:TextBox ID="txtpWord" runat="server" Width="336px"></asp:TextBox>
                     <br />
-                    <asp:RequiredFieldValidator ID="passwordVal" runat="server" ControlToValidate="txtpWord" CssClass="textWarn" ErrorMessage="Enter a unique password"></asp:RequiredFieldValidator>
+                    <asp:CustomValidator ID="passwordVal" runat="server" ControlToValidate="txtpWord" CssClass="textWarn" Display="Dynamic" ErrorMessage="Enter a 8-16 character password" OnServerValidate="passwordVal_ServerValidate" SetFocusOnError="True" ValidateEmptyText="True">Enter a 8-16 character password</asp:CustomValidator>
+                    <br />
                 </td>
             </tr>
         </table>
         <p class="auto-style1">
-            <asp:Button ID="btnReg" runat="server" Text="Register" OnClick="btnReg_Click" />
+            <asp:Button ID="btnReg" runat="server" Text="Register" OnClick="btnReg_Click" Width="174px" />
         </p>
 </asp:Content>
 
