@@ -12,13 +12,13 @@ namespace INFT3050Assig.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            BusLayer objBL = new BusLayer();
+            //BusLayer objBL = new BusLayer();
 
             /*
              * The try catch block is to ensure if there are any errors with the gridview and data collected from the business layer..
              * the catch block is carried out to prevent crashing
              */
-            try
+            /*try
             {
                 gridAccounts.DataSource = objBL.SelectUser();
                 gridAccounts.DataBind();
@@ -27,7 +27,7 @@ namespace INFT3050Assig.UL
             catch
             {
                 Response.Redirect("ErrorPage.aspx");
-            }
+            }*/
             
 
         }

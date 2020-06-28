@@ -104,6 +104,7 @@
     <Content Include="UL\CSS\formSS.css" />
     <Content Include="UL\HomePage.aspx" />
     <Content Include="UL\IMG\gTick.jpg" />
+    <Content Include="UL\TouchedBook.aspx" />
     <Content Include="UL\userlogin.aspx" />
     <Content Include="UL\UserRego.aspx" />
     <Content Include="UL\ViewCart.aspx" />
@@ -263,6 +264,13 @@
     <Compile Include="UL\HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UL\TouchedBook.aspx.cs">
+      <DependentUpon>TouchedBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\TouchedBook.aspx.designer.cs">
+      <DependentUpon>TouchedBook.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UL\userlogin.aspx.cs">
       <DependentUpon>userlogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -284,20 +292,11 @@
     <Compile Include="UL\ViewCart.aspx.designer.cs">
       <DependentUpon>ViewCart.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewSwitcher.ascx.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.designer.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="UL\MainMaster.Master" />
     <Content Include="UL\NavMaster.Master" />
-    <Content Include="Site.Mobile.Master" />
-    <Content Include="UL\Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
