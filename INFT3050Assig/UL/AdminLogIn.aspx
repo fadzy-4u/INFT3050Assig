@@ -36,11 +36,14 @@
                     <td class="auto-style3">
                         <asp:TextBox ID="txtAdminPass" runat="server"></asp:TextBox>
                     </td>
+
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">
                         <asp:Button ID="btnLog" runat="server" Text="LogIn" Width="124px" OnClick="btnLog_Click" />
+                        <!-- <a href ="ForgetPassword.aspx", 'FP','width=500,
+                            height=50, top=300,left=500,fullscreen=no, resizable=0');">Forget Password? </a>-->
                         <asp:Label ID="lblerror" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>

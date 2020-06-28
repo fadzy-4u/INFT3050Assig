@@ -16,7 +16,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44378</IISExpressSSLPort>
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -78,6 +79,7 @@
     <Content Include="UL\Books.aspx" />
     <Content Include="UL\EditAccouts.aspx" />
     <Content Include="UL\ErrorPage.aspx" />
+    <Content Include="UL\ForgetPassword.aspx" />
     <Content Include="UL\IMG\devilsback.jpg" />
     <Content Include="UL\IMG\devilsfront.jpg" />
     <Content Include="UL\IMG\empireback.jpg" />
@@ -177,6 +179,13 @@
     </Compile>
     <Compile Include="UL\ErrorPage.aspx.designer.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\MainMaster.Master.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
