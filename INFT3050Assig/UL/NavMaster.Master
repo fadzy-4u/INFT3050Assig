@@ -38,7 +38,7 @@
             <hr />
             <div class="divIcons">
                 <asp:ImageButton ID="orderhis" ImageUrl="~/UL/IMG/order-history.png" PostBackUrl="~/UL/PurchaseHistory.aspx" runat="server" Height="61px" Width="61px" />
-                <asp:ImageButton ID="cart" ImageUrl="~/UL/IMG/cart.png" PostBackUrl="~/UL/ViewCart.aspx" runat="server" Height="61px" Width="61px" />
+                <asp:ImageButton ID="cart" ImageUrl="~/UL/IMG/cart.png" PostBackUrl="/https://localhost:44378/UL/ViewCart.aspx" runat="server" Height="61px" Width="61px" />
                 <asp:ImageButton ID="imgaccount" ImageUrl="~/UL/IMG/account.png" PostBackUrl="~/UL/Account.aspx" runat="server" Height="61px" Width="61px" />
             </div>
             <hr />

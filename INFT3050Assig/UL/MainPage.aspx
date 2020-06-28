@@ -22,8 +22,8 @@
             <a href="userlogin.aspx">Already a member? Log in here</a>
             <hr />
             <h2>Administrator</h2>
-            <a href="AdminReg.aspx">Admin Registration</a> <br /><br />
-            <a href="AdminLogIn.aspx">Admin LogIn</a>
+            <a href="https://localhost:44378/UL/AdminReg.aspx">Admin Registration</a> <br /><br />
+            <a href="https://localhost:44378/UL/AdminLogIn.aspx">Admin LogIn</a>
         </div>
 
 </asp:Content>

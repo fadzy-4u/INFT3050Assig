@@ -4,6 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+using BL;
+
 
 namespace INFT3050Assig.UL
 {
@@ -18,15 +23,23 @@ namespace INFT3050Assig.UL
         {
             string strUsername = Convert.ToString(txtUsername.Text);
             string strPass = Convert.ToString(txtPassword.Text);
+            BusLayer busLayer = new BusLayer();
 
             string testUser = "Shingi";
             string testPass = "1234";
+            string userN = txtUsername.Text;
+            string pWrd = txtPassword.Text;
+            busLayer.InsertUlogin(userN,pWrd);
 
-            if(strUsername == testUser && strPass == testPass)
+            //SqlCommand sqlCommand = new SqlCommand();
+            
+
+
+            if (strUsername == testUser && strPass == testPass)
             {
-                Session["USER_ID"] = 1;
+                Session["USER_ID"] = txtUsername.Text;
                 Response.Redirect("HomePage.aspx");
-                
+
             }
             else
             {

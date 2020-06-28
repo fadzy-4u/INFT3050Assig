@@ -43,15 +43,6 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">Date Of Birth</td>
-                <td class="auto-style4">
-                    <asp:TextBox ID="txtDate" runat="server" Width="336px"></asp:TextBox>
-                    <br />
-                    <asp:RangeValidator ID="dateVal" runat="server" CssClass="textWarn" Display="Dynamic" ErrorMessage="Age not within required range" SetFocusOnError="True" ControlToValidate="txtDate" MaximumValue="01/01/2002" MinimumValue="01/01/1900" Type="Date">Age not within required range(18 and above)</asp:RangeValidator>
-                    <br />
-                </td>
-            </tr>
-            <tr>
                 <td class="auto-style3">Address</td>
                 <td class="auto-style4">
                     <asp:TextBox ID="txtAddress" runat="server" Width="336px"></asp:TextBox>
@@ -95,6 +86,10 @@
         </table>
         <p class="auto-style1">
             <asp:Button ID="btnReg" runat="server" Text="Register" OnClick="btnReg_Click" Width="174px" />
+        </p>
+    <p class="auto-style1">
+            <asp:GridView ID="GridView1" runat="server">
+            </asp:GridView>
         </p>
 </asp:Content>
 

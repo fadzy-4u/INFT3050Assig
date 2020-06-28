@@ -41,7 +41,7 @@
                     <td colspan="2" class="auto-style4">
                         &nbsp;
                         <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" Height="38px" Width="91px" /><a href="userlogin.aspx">Forgot Passowrd?</a>
-                    </td>
+                        </td>
                 </tr>
             </table>
 

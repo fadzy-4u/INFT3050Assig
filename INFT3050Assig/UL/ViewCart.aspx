@@ -2,10 +2,6 @@
 
 <asp:Content ID="headContent" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style3 {
-            width: 327px;
-            height: 200px;
-        }
         .auto-style4 {
             width: 100%;
         }
@@ -13,11 +9,7 @@
             width: 440px;
             text-align: center;
         }
-        .auto-style7 {
-            text-align: right;
-            width: 1164px;
-        }
-    </style>
+        </style>
 </asp:Content>
 
 <asp:Content ID="bodyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -49,6 +41,12 @@
                         </asp:DropDownList>
                         <br />
                         <a href="">Remove</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnCheckout" runat="server" Text="Checkout" Width="264px" OnClick="btnCheckout_Click" />
                     </td>
                 </tr>
             </table>

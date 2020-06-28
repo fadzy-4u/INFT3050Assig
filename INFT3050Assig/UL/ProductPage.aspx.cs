@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace INFT3050Assig
 {
@@ -36,7 +37,9 @@ namespace INFT3050Assig
 
         protected void btnCart_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ViewCart.aspx");
+            Session["Cart"] = "ViewCart";
+            string url = ConfigurationManager.AppSettings["Secure Path"] + "UL/ViewCart.aspx"; //Code to get a secure path for the ViewCart page
+            Response.Redirect(url);
         }
 
         protected void btnCheckout_Click(object sender, EventArgs e)

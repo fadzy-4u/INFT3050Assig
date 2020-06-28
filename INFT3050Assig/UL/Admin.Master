@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="INFT3050Assig.UL.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        .logostyle {
+            width: 179px;
+            height: 114px;
+        }
+        .tableClass {
+            width: 100%;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <img alt="FIrm Books" src="IMG/logo.png" class="logostyle" />
+              <hr />
+            <table class="tableClass">
+                <tr>
+                    <td class="widthStyle">
+                        <asp:LinkButton ID="linkHome" CssClass="a" PostBackUrl="https://localhost:44378/UL/Books.aspx" runat="server">Books</asp:LinkButton>
+                    </td>
+                    <td class="widthStyle" >
+                        <asp:LinkButton ID="linkSearch" CssClass="a" PostBackUrl="https://localhost:44378/UL/EditAccouts.aspx" runat="server">User Accounts</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

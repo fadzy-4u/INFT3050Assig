@@ -64,5 +64,10 @@ namespace INFT3050Assig.UL
         {
             Response.Redirect("ViewCart.aspx");
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

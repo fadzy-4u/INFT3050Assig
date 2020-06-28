@@ -40,7 +40,7 @@
                     <td class="auto-style5">
                         <asp:TextBox ID="txPH" runat="server" Width="350px"></asp:TextBox>
                         <br />
-                        <asp:RegularExpressionValidator ID="phoneValidator" runat="server" CssClass="textWarn" Display="Dynamic" ErrorMessage="Enter a valid Australian Phone number" SetFocusOnError="True" ValidationExpression="(\d{10}$)|(^\d{11}$)">Enter a valid Australian Phone number</asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="phoneValidator" runat="server" CssClass="textWarn" Display="Dynamic" ErrorMessage="Enter a valid Australian Phone number" SetFocusOnError="True" ValidationExpression="(\d{10}$)|(^\d{11}$)" ControlToValidate="txPH">Enter a valid Australian Phone number</asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
@@ -64,6 +64,9 @@
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style5">
                         <asp:Button ID="btnSubmit" runat="server" Text="Register" OnClick="btnSubmit_Click" Width="201px" /><a href="MainPage.aspx">Cancel Registration</a>
+                        <br />
+                        <asp:GridView ID="GridTest" runat="server" Height="247px" Width="537px">
+                        </asp:GridView>
                     </td>
                 </tr>
             </table>

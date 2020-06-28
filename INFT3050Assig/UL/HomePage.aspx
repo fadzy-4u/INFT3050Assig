@@ -87,7 +87,6 @@
 
     </div>
     <hr />
-    <h2>Best Sellers</h2>
     <div class="auto-style3">
 
         <table class="auto-style8">

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using BL;
+using System;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -16,9 +14,32 @@ namespace INFT3050Assig.UL
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (Page.IsValid)
+            string aID;
+            int iD = 1;
+            iD = iD + 1;
+            aID = iD.ToString();
+            int pNum = Convert.ToInt32(txPH.Text);
+            string firstName = txFname.Text;
+            string lastName = txLname.Text;
+            string email = txMail.Text;
+            string passWord = txPw.Text;
+            //string adminID = Convert.ToString(aID);
+            BusLayer busLayer = new BusLayer();
+            
+            try
             {
-                Response.Redirect("AdminLogIn.aspx");
+                busLayer.InsertAdminDet(aID, firstName, lastName, email, pNum, passWord);
+                GridTest.DataSource = busLayer.SelectAdminDet();
+                GridTest.DataBind();
+
+                if (Page.IsValid)
+                {
+                    Response.Redirect("AdminLogIn.aspx");
+                }
+            }
+            catch
+            {
+                Response.Redirect("ErrorPage.aspx");
             }
         }
 

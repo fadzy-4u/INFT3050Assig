@@ -16,7 +16,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44378</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -72,6 +75,9 @@
     <Content Include="UL\AdminLogIn.aspx" />
     <Content Include="UL\AdminReg.aspx" />
     <Content Include="UL\advancedSearch.aspx" />
+    <Content Include="UL\Books.aspx" />
+    <Content Include="UL\EditAccouts.aspx" />
+    <Content Include="UL\ErrorPage.aspx" />
     <Content Include="UL\IMG\devilsback.jpg" />
     <Content Include="UL\IMG\devilsfront.jpg" />
     <Content Include="UL\IMG\empireback.jpg" />
@@ -101,11 +107,20 @@
     <Content Include="UL\userlogin.aspx" />
     <Content Include="UL\UserRego.aspx" />
     <Content Include="UL\ViewCart.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="UL\Account.aspx.cs">
       <DependentUpon>Account.aspx</DependentUpon>
@@ -113,6 +128,13 @@
     </Compile>
     <Compile Include="UL\Account.aspx.designer.cs">
       <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="UL\AdminLogIn.aspx.cs">
       <DependentUpon>AdminLogIn.aspx</DependentUpon>
@@ -134,6 +156,27 @@
     </Compile>
     <Compile Include="UL\advancedSearch.aspx.designer.cs">
       <DependentUpon>advancedSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Books.aspx.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Books.aspx.designer.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\EditAccouts.aspx.cs">
+      <DependentUpon>EditAccouts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\EditAccouts.aspx.designer.cs">
+      <DependentUpon>EditAccouts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\MainMaster.Master.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
@@ -241,11 +284,20 @@
     <Compile Include="UL\ViewCart.aspx.designer.cs">
       <DependentUpon>ViewCart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="UL\MainMaster.Master" />
     <Content Include="UL\NavMaster.Master" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="UL\Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -255,10 +307,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DAL\" />
-    <Folder Include="DL\" />
+    <Folder Include="BL\" />
+    <Folder Include="MailAddress\Convert\" />
     <Folder Include="Models\" />
     <Folder Include="UL\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{c07874f2-f06a-4aa8-a3c4-7a4c1af342b3}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

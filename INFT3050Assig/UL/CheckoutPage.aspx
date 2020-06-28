@@ -125,12 +125,12 @@
                     <asp:Button ID="btnCheckout" runat="server" Text="Check Out" Width="340px" OnClick="btnCheckout_Click" />
                 </td>
                 <td class="auto-style12">
-                    <asp:Button ID="btnCancel" runat="server" Text="Cancel Order" Width="340px" />
+                    <asp:Button ID="btnCancel" runat="server" Text="Cancel Order" Width="340px" OnClick="btnCancel_Click" />
                 </td>
             </tr>
         </table>
         <div class="auto-style13">
-        <a href="HomePage.aspx">Continue Shopping</a>
+        <a href="https://localhost:44378/UL/HomePage.aspx">Continue Shopping</a>
         </div>
 
 </asp:Content>

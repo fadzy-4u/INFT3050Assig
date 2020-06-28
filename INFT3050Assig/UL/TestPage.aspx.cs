@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net.Mail;
+using System.Web.Mail;
+using System.Data.SqlClient;
+using BL;
 
 namespace INFT3050Assig
 {
@@ -53,5 +57,46 @@ namespace INFT3050Assig
         {
             Response.Redirect("ViewCart.aspx");
         }
+
+        protected void btnEmail_Click(object sender, EventArgs e)
+        {
+            string fromAddy = "benchikoto@yahoo.com";
+            string toAddy = "shingichikoto@outlook.com";
+            string subjectA = "TESTING EMAIL";
+            string bodyA = "This is a test email";
+
+            sendEmailMessage(fromAddy,toAddy,subjectA,bodyA);
+            Response.Redirect("TestPage.aspx");
+        }
+
+        private void sendEmailMessage(string fromAddress, string toAddress, string subJ, string bodyMail)
+        {
+            MailAddress fromAdd = new MailAddress(fromAddress);
+            MailAddress toAdd = new MailAddress(toAddress);
+            System.Net.Mail.MailMessage mailMessage = new System.Net.Mail.MailMessage(fromAdd,toAdd);
+            mailMessage.Body = bodyMail;
+            mailMessage.Subject = subJ;
+
+            SmtpClient client = new SmtpClient("smtp.mail.yahoo.com",587);
+            client.Credentials = new System.Net.NetworkCredential("benchikoto@yahoo.com", "#dabukaisthere");
+            client.UseDefaultCredentials = true;
+            try
+            {
+                client.Send(mailMessage);
+            }
+            catch
+            {
+                Response.Redirect("HomePage.aspx");
+            }
+            
+
+        }
+
+        protected void btnTest_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection("Data Source=SHINGI-S-LAPTOP\\SQLEXPRESS;Initial Catalog=INFT3050Assig;Integrated Security=True");
+        }
+
+       
     }
 }
