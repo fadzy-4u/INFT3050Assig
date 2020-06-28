@@ -40,7 +40,10 @@
                 <tr>
                     <td colspan="2" class="auto-style4">
                         &nbsp;
-                        <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" Height="38px" Width="91px" /><a href="userlogin.aspx">Forgot Passowrd?</a>
+                        <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" Height="38px" Width="91px" />
+                        <!--<a href="userlogin.aspx">Forgot Passowrd?</a>
+                        <a href ="ForgetPassword.aspx", 'FP','width=500,
+                            height=50, top=300,left=500,fullscreen=no, resizable=0');">Forget Password? </a>-->
                         </td>
                 </tr>
             </table>
